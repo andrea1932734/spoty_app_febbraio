@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    
     <h1>Benvenuto, {{ user_info['display_name'] }}!</h1>
     {% if user_info['images'] %}
        <img src="{{ user_info['images'][0]['url'] }}" width="200">
