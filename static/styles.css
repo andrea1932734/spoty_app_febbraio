@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Jumbotron (container for content) */
+.Jumbotron {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Jumbotron h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.Jumbotron h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Profile image */
+.Jumbotron img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Table for playlists */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Playlist actions */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button-like link styles */
+a.logout {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a.logout:hover {
+    background-color: #0056b3;
+}
