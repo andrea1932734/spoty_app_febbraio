@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
     <title>Home</title>
 </head>
 <body>
@@ -41,7 +41,7 @@
                                 {% endif %}
                             </td>
                             <td>
-                                <a href="{{ url_for('view_songs', playlist_id=playlist['id']) }}">Visualizza Canzoni</a>
+                                <a href="/view_songs/{{ playlist['id'] }}">Visualizza Canzoni</a>
                             </td>
                         </tr>
                     {% endfor %}
@@ -52,7 +52,7 @@
         {% endif %}
         <br>
         <br><br>
-        <a href="{{ url_for('logout') }}">LOGOUT</a>
+        <a href="{{ url_for('auth.logout') }}">LOGOUT</a>
         <br><br><br>
     </div>
 </body>
